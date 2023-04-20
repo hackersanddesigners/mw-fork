@@ -134,3 +134,14 @@
 	path = vendor
 	url = https://gerrit.wikimedia.org/r/mediawiki/vendor
 	branch = REL1_39
+
+# not included in composer.local.json
+
+[submodule "extensions/extensions/UserMerge"]
+	path = extensions/extensions/UserMerge
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/UserMerge
+	branch = REL1_39
+[submodule "extensions/HTMLTags"]
+	path = extensions/HTMLTags
+	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/HTMLTags
+	branch = REL1_39

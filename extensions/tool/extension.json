@@ -1,0 +1,24 @@
+{
+	"name": "Tool",
+	"version": "0.1.0",
+	"author": [
+		"Karl Moubarak"
+	],
+	"url": "https://github.com/karlmoubarak/GithubEmbed/tool",
+	"descriptionmsg": "A MediaWiki tag extension to embed, link, and style contents from files hosted on GitHub repositories.",
+	"license-name": "GPL v2",
+	"type": "parserhook",
+	"config": {
+		"GithubEmbedEnableFoo": true
+	},
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"tool::onParserFirstCallInit"
+		]
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "tool"
+	},
+	"manifest_version": 1
+}
