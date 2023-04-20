@@ -81,6 +81,7 @@ https://www.semantic-mediawiki.org/wiki/Help:Deinstallation
 ## todo
 
 - we could manage MediaWiki itself as a git repo
+  - [see this wiki](https://www.mediawiki.org/wiki/Intranet/Intranet_Installation)
 
 
 # MediaWiki
