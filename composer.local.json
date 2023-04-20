@@ -1,0 +1,15 @@
+{
+    "require": {
+        "mediawiki/page-forms": "^5.6",
+        "mediawiki/babel": "^2023.01",
+        "mediawiki/cldr": "^2023.01",
+        "mediawiki/universal-language-selector": "^2023.01",
+        "mediawiki/translate": "^2023.01"
+    },
+    "config": {
+        "allow-plugins": {
+            "wikimedia/composer-merge-plugin": true,
+            "composer/installers": true
+        }
+    }
+}
