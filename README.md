@@ -120,9 +120,6 @@ We would like to prefer to use Composer to manage most of our extensions and the
 
 https://www.semantic-mediawiki.org/wiki/Help:Deinstallation
 
-## Todo
-
-- we could manage MediaWiki itself as a git repo
 
 
 ---------
