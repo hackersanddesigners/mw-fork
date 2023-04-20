@@ -115,52 +115,17 @@ We would like to prefer to use Composer to manage most of our extensions and the
 ### Extensions & Skins
 
 
-
-### export / import
-
-if you want to work with a copy of the online H&D MediaWiki, you need to export the following:
-
-- SQL database
-- images folder
-
-to export a copy of an existing database, do:
-
-```
-mysqldump -h hostname -u userid -p --default-character-set=whatever dbname > backup.sql
-```
-
-> Substituting hostname, userid, whatever, and dbname as appropriate. All four may be found in your LocalSettings.php (LSP) file. hostname may be found under $wgDBserver; by default it is localhost. userid may be found under $wgDBuser, whatever may be found under $wgDBTableOptions, where it is listed after DEFAULT CHARSET=.
-
-see this article for more details: <https://www.mediawiki.org/wiki/Manual:Backing_up_a_wiki#Mysqldump_from_the_command_line>
-
-for the images folder and `LocalSettings.php`, make a backup from the Mediawiki instance running online.
-
-then we need to restore all this data:
-
-- import database
-- copy images folder
-- copy `LocalSettings.php`
-#### import db data
-
-open another terminal and do:
-
-- `devenv shell`, to enter to the correct working enviroment defined in `devenv.shell`
-- `mysql -u <user>@localhost -p <wikidb> < <path/to/wikidb.sql>`, to do the db import
-- `php w/maintenance/update.php` to do the database migration and other things
-
-#### copy images folder and LocalSettings
-
-simply copy over the images folder and `LocalSettings.php` into the MediaWiki folder.
-
-
-#### Semantic Mediawiki Desintallation
+## Notes
+### Semantic Mediawiki Desintallation
 
 https://www.semantic-mediawiki.org/wiki/Help:Deinstallation
 
-## todo
+## Todo
 
 - we could manage MediaWiki itself as a git repo
 
+
+---------
 
 # MediaWiki
 
