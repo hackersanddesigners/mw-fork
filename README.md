@@ -99,8 +99,17 @@ git submodule update --init --recursive
 ```
 
 This will install all git submodules listed in the `.gitmodules` file.
+The end of this file shows a few extensions that we have added ourselves. These are not in the original mediawiki/core repository and belong to our fork.
 
-We would like to prefer to use Composer to manage most of our extensions and their version though. This means that have excluded from
+Unfortunately, not all extensions and skins can be installed in this way, so, although this is the prefered installation mechanism, when it doesn't work we will use Composer.
+For this, please make sure Composer is installed and configured globally and then run:
+```
+composer install
+```
+
+This is will install all Vendors, Extentions and Skins managed by composer. Make note of the `composer.local.json` file that is being tracked by git. This is where we include our extensions that we could manage to install as git submodules. Also make note that all extensions listed in the `composer.local.json` are added to `.gitignore` to keep them out of our tracking.
+
+It is definitely also possible that some extensions can not be managed as git submodules or even with Composer, in which case, please do downlaod them and unzip them into the correct directory and commit them to our work tree.
 
 ## Deployment
 
