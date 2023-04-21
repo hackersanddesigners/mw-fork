@@ -120,9 +120,15 @@ It is definitely also possible that some extensions can not be managed as git su
 
 ### Mediawiki
 
+Fetch stable branch of mediawiki and merge using [git rerere](https://www.git-scm.com/book/en/v2/Git-Tools-Rerere).
 
 ### Extensions & Skins
 
+```
+git submodule fetch --init --recursive
+rm composer.lock
+composer update
+```
 
 ## Notes
 ### Semantic Mediawiki Desintallation
