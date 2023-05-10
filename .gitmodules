@@ -147,4 +147,4 @@
 	branch = REL1_39
 [submodule "extensions/tool"]
 	path = extensions/tool
-	url = git@github.com:karlmoubarak/tool.git
+	url = https://github.com:karlmoubarak/tool.git
