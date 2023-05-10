@@ -112,6 +112,7 @@ backups
 # Also adding here all extensions managed by composer
 # found in composer.local.json
 
+vendor/*
 
 extensions/PageForms
 extensions/Babel
