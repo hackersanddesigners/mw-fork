@@ -92,9 +92,6 @@ The git version of Mediawiki manages all the default extensions & skins as git s
 
 ```
 devenv shell
-cd extensions
-git submodule update --init --recursive
-cd ../skins
 git submodule update --init --recursive
 ```
 
@@ -113,7 +110,15 @@ It is definitely also possible that some extensions can not be managed as git su
 
 ## Deployment
 
-
+Clone this repository at branch 'h&d' into your web server and cd into it.
+```
+git clone -b 'h&d' https://github.com/hackersanddesigners/mw-fork.git
+cd mw-fork
+```
+Then, install all git submodules.
+```
+git submodule update --init --recursive
+```
 
 
 
