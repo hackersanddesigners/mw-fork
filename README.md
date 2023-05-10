@@ -115,6 +115,10 @@ Clone this repository at branch 'h&d' into your web server and cd into it.
 git clone -b 'h&d' https://github.com/hackersanddesigners/mw-fork.git
 cd mw-fork
 ```
+Then, install all vendor libraries and extensions managed by composer
+```
+composer install --no-dev
+```
 Then, install all git submodules.
 ```
 git submodule update --init --recursive
