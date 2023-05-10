@@ -124,6 +124,12 @@ Then, install all git submodules.
 git submodule update --init --recursive
 ```
 
+Create the file `.env.php` based on the provided sample and require it in localsettings.php at the top:
+
+```php
+# evnrionment secrets
+require_once "/var/www/mw-fork/.env.php";
+```
 
 
 
