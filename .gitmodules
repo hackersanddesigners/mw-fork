@@ -145,3 +145,6 @@
 	path = extensions/HTMLTags
 	url = https://gerrit.wikimedia.org/r/mediawiki/extensions/HTMLTags
 	branch = REL1_39
+[submodule "extensions/tool"]
+	path = extensions/tool
+	url = git@github.com:karlmoubarak/tool.git
