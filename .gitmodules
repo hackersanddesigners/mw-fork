@@ -148,3 +148,7 @@
 [submodule "extensions/tool"]
 	path = extensions/tool
 	url = https://github.com/karlmoubarak/tool.git
+[submodule "extensions/CleanChanges"]
+	path = extensions/CleanChanges
+	url = https://github.com/wikimedia/mediawiki-extensions-CleanChanges
+	branch = REL1_39

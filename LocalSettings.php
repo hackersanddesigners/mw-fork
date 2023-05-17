@@ -184,11 +184,45 @@ wfLoadExtension( 'Babel' );
 wfLoadExtension( 'Cldr' );
 wfLoadExtension( 'UniversalLanguageSelector' );
 wfLoadExtension( 'Translate' );
+
+wfLoadExtension( 'CleanChanges' );
+$wgDefaultUserOptions['usenewrc'] = 1;
+
+# Translation and translation task management permissions
+
 $wgGroupPermissions['user']['translate'] = true;
 $wgGroupPermissions['user']['translate-messagereview'] = true;
 $wgGroupPermissions['user']['translate-groupreview'] = true;
 $wgGroupPermissions['user']['translate-import'] = true;
-$wgGroupPermissions['sysop']['pagetranslation'] = true;
-$wgGroupPermissions['sysop']['translate-manage'] = true;
+$wgGroupPermissions['user']['pagetranslation'] = true;
+$wgGroupPermissions['user']['translate-manage'] = true;
+
 $wgTranslateDocumentationLanguageCode = 'qqq';
-$wgExtraLanguageNames['qqq'] = 'Message documentation';
+
+$wgTranslateLanguageFallbacks['nl'] = 'en';
+
+$wgEnablePageTranslation = true;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# end
