@@ -14,8 +14,7 @@
 
 # Environment: Logging and Secrets
 
-require_once "/home/km/Desktop/MW-FORK/.env.php";
-
+require_once(__DIR__.'/.env.php');
 
 ## Uncomment this to disable output compression
 # $wgDisableOutputCompression = true;
