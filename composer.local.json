@@ -1,6 +1,6 @@
 {
     "require": {
-        "mediawiki/page-forms": "^5.6",
+        "mediawiki/page-forms": "^5.6.1",
         "mediawiki/babel": "^2023.01",
         "mediawiki/cldr": "^2023.01",
         "mediawiki/universal-language-selector": "^2023.01",
