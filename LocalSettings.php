@@ -204,7 +204,9 @@ $wgEnablePageTranslation = true;
 
 
 # for mass editing of pages
+
 wfLoadExtension( 'ReplaceText' );
+$wgReplaceTextResultsLimit = 500;
 
 
 
