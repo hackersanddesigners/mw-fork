@@ -184,7 +184,6 @@ wfLoadExtension( 'Babel' );
 wfLoadExtension( 'Cldr' );
 wfLoadExtension( 'UniversalLanguageSelector' );
 wfLoadExtension( 'Translate' );
-
 wfLoadExtension( 'CleanChanges' );
 $wgDefaultUserOptions['usenewrc'] = 1;
 
@@ -204,8 +203,8 @@ $wgTranslateLanguageFallbacks['nl'] = 'en';
 $wgEnablePageTranslation = true;
 
 
-
-
+# for mass editing of pages
+wfLoadExtension( 'ReplaceText' );
 
 
 
