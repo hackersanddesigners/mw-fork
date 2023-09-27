@@ -150,6 +150,7 @@ wfLoadExtension( 'PageForms' );
 wfLoadExtension( 'WikiEditor' );
 wfLoadExtension( 'SyntaxHighlight_GeSHi' );
 wfLoadExtension( 'VisualEditor' );
+wfLoadExtension( 'CodeEditor' );
 
 
 # Embed Video / doesnt work
