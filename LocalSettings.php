@@ -223,10 +223,9 @@ $wgRCFeeds['exampleirc'] = array(
 );
 
 
+# support citations
 
-
-
-
+wfLoadExtension( 'Cite' );
 
 
 
