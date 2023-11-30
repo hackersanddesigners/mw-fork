@@ -154,5 +154,5 @@
 	branch = REL1_39
 [submodule "extensions/EmbedVideo"]
 	path = extensions/EmbedVideo
-	url = https://gitlab.com/hydrawiki/extensions/EmbedVideo.git
+	url = https://github.com/StarCitizenWiki/mediawiki-extensions-EmbedVideo.git
 	branch = master
