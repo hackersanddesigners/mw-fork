@@ -161,6 +161,7 @@ wfLoadExtension( 'CodeEditor' );
 # Custom Tool embed, used to import readme files from github
 # and add them into a little widget in the page
 
+wfLoadExtension( 'ExternalContent' );
 $egGitHubDefaultRepo = 'karlmoubarak/ToolSample';
 $egGitHubUrl = 'https://raw.githubusercontent.com';
 require_once( "$IP/extensions/tool/tool.php" );

@@ -1,0 +1,18 @@
+<phpunit colors="true">
+	<testsuites>
+		<testsuite name="Unit">
+			<directory>tests/Unit</directory>
+		</testsuite>
+		<testsuite name="Integration">
+			<directory>tests/Integration</directory>
+		</testsuite>
+		<testsuite name="System">
+			<directory>tests/System</directory>
+		</testsuite>
+	</testsuites>
+	<filter>
+		<whitelist addUncoveredFilesFromWhitelist="true">
+			<directory suffix=".php">src</directory>
+		</whitelist>
+	</filter>
+</phpunit>

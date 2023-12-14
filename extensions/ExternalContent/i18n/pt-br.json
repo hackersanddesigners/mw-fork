@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardoaddad"
+		]
+	},
+	"external-content-desc": "Permite a incorporação de conteúdo externo, como arquivos markdown, em suas páginas wiki",
+	"external-content-extension-not-allowed": "Incorporar arquivos com esta extensão não é permitido"
+}

@@ -1,0 +1,100 @@
+{
+	"name": "External Content",
+	"version": "2.0.1",
+	"license-name": "GPL-2.0-or-later",
+
+	"author": [
+		"[https://www.EntropyWins.wtf/mediawiki Jeroen De Dauw]",
+		"[https://professional.wiki/ Professional.Wiki]"
+	],
+
+	"url": "https://github.com/ProfessionalWiki/ExternalContent",
+
+	"descriptionmsg": "external-content-desc",
+
+	"requires": {
+		"MediaWiki": ">= 1.35.0",
+		"platform": {
+			"php": ">= 8.0"
+		}
+	},
+
+	"config": {
+		"ExternalContentRenderMarkdownByDefault": {
+			"description": "Render markdown files rather than showing the markdown in a codeblock, unless the file is explicitly marked as code.",
+			"value": true
+		},
+		"ExternalContentDomainWhitelist": {
+			"description": "List of allowed domains to embed content from. Leave empty to have no restriction.",
+			"value": []
+		},
+		"ExternalContentFileExtensionWhitelist": {
+			"description": "List of allowed file extensions. Empty array for no restriction.",
+			"value": []
+		},
+		"ExternalContentEnableEmbedFunction": {
+			"description": "If the #embed parser function should be enabled.",
+			"value": true
+		},
+		"ExternalContentEnableBitbucketFunction": {
+			"description": "If the #bitbucket parser function should be enabled.",
+			"value": true
+		},
+		"ExternalContentBasicAuthCredentials": {
+			"description": "Per-domain Basic Auth credentials.",
+			"value": []
+		}
+	},
+
+	"MessagesDirs": {
+		"ExternalContent": [
+			"i18n"
+		]
+	},
+
+	"ExtensionMessagesFiles": {
+		"NetworkParserFunction": "i18n/_MagicWords.php"
+	},
+
+	"AutoloadNamespaces": {
+		"ProfessionalWiki\\ExternalContent\\": "src/",
+		"ProfessionalWiki\\ExternalContent\\Tests\\": "tests/"
+	},
+
+	"Hooks": {
+		"ParserFirstCallInit": "ProfessionalWiki\\ExternalContent\\EntryPoints\\MediaWikiHooks::onParserFirstCallInit",
+		"ParserTestGlobals": "ProfessionalWiki\\ExternalContent\\EntryPoints\\MediaWikiHooks::onParserTestGlobals",
+		"SearchDataForIndex": "ProfessionalWiki\\ExternalContent\\EntryPoints\\MediaWikiHooks::onSearchDataForIndex",
+		"SearchIndexFields": "ProfessionalWiki\\ExternalContent\\EntryPoints\\MediaWikiHooks::onSearchIndexFields"
+	},
+
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "ExternalContent/resources"
+	},
+
+	"ResourceModules": {
+		"ext.external-content.code-renderer": {
+			"es6": true,
+			"scripts": [
+				"prism/prism.js",
+				"bitbucket-edit.js",
+				"code-specific-lines.js",
+				"copy-to-clipboard.js"
+			]
+		},
+		"ext.external-content.code-renderer.styles": {
+			"styles": [
+				"prism/prism.css",
+				"code-renderer.css"
+			]
+		}
+	},
+
+	"TrackingCategories": [
+		"external-content-tracking-category",
+		"external-content-broken-tracking-category"
+	],
+
+	"manifest_version": 2
+}

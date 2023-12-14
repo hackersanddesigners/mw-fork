@@ -4,7 +4,8 @@
         "mediawiki/babel": "^2023.01",
         "mediawiki/cldr": "^2023.01",
         "mediawiki/universal-language-selector": "^2023.01",
-        "mediawiki/translate": "^2023.01"
+        "mediawiki/translate": "^2023.01",
+        "professional-wiki/external-content": "~2.0"
     },
     "config": {
         "allow-plugins": {
