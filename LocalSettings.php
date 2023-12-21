@@ -219,8 +219,8 @@ $wgReplaceTextResultsLimit = 500;
 wfLoadExtension( 'Cite' );
 
 
-
-
+# Max count for category tree
+$wgCategoryTreeMaxChildren = 1000;
 
 
 
