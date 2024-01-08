@@ -155,7 +155,7 @@ wfLoadExtension( 'CodeEditor' );
 
 # Embed Video / doesnt work
 
-wfLoadExtension("EmbedVideo");
+// wfLoadExtension("EmbedVideo");
 
 
 # Custom Tool embed, used to import readme files from github
