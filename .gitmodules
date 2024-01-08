@@ -152,3 +152,6 @@
 	path = extensions/CleanChanges
 	url = https://github.com/wikimedia/mediawiki-extensions-CleanChanges
 	branch = REL1_39
+[submodule "EmbedVideo"]
+	path = extensions/EmbedVideo
+	url = https://github.com/StarCitizenWiki/mediawiki-extensions-EmbedVideo.git
