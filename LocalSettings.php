@@ -222,8 +222,8 @@ wfLoadExtension( 'Cite' );
 # Max count for category tree
 $wgCategoryTreeMaxChildren = 1000;
 
-
-
+# wrap your html tags in <html></html> for it work
+$wgRawHtml = true;
 
 
 
