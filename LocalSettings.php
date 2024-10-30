@@ -66,10 +66,10 @@ $wgUseImageMagick = true;
 $wgImageMagickConvertCommand = "/usr/bin/convert";
 $wgFileExtensions = [ 'png', 'gif', 'jpg', 'jpeg', 'doc',
   'xls', 'mpp', 'pdf', 'ppt', 'tiff', 'bmp', 'docx', 'xlsx',
-  'pptx', 'ps', 'odt', 'ods', 'odp', 'odg', 'ogg', 'wav', 
+  'pptx', 'ps', 'odt', 'ods', 'odp', 'odg', 'ogg', 'wav',
   'zip', 'mp3', 'mp4', 'mov', 'ttf', 'otf', 'woff', 'woff2'
 ];
-
+wfLoadExtension( 'SimpleBatchUpload' );
 
 # InstantCommons allows wiki to use images from https://commons.wikimedia.org
 $wgUseInstantCommons = false;

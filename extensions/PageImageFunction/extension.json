@@ -1,0 +1,23 @@
+{
+	"name": "PageImageFunction",
+	"author": "Karl Mouabrak",
+	"version": "1.0.0",
+	"descriptionmsg": "e",
+	"license-name": "CC4L",
+	"type": "parserhook",
+	"MessagesDirs": {
+		"PageImageFunction": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"PageImageFunctionHooks": "src/PageImageFunctionHooks.php"
+	},
+	"ExtensionMessagesFiles": {
+		"PageImageFunctionMagic": "PageImageFunction.i18n.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": "PageImageFunctionHooks::onParserFirstCallInit"
+	},
+	"manifest_version": 1
+}
