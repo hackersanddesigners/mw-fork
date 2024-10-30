@@ -145,6 +145,10 @@ wfLoadExtension( 'UserMerge' );
 $wgGroupPermissions['bureaucrat']['usermerge'] = true;
 $wgUserMergeProtectedGroups = array( 'groupname' );
 
+# Enable parser functions
+
+wfLoadExtension( 'ParserFunctions' );
+
 
 # Enable page forms for tempaltes
 
